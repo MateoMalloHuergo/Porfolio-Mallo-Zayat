@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body class="bg-gradient-to-b from-blue-900 to-blue-700 text-white">
+
+    <!-- NAV SUPERIOR FIJO -->
+    <header class="w-full fixed top-0 left-0 z-50 flex justify-center py-6 bg-blue-900/20 backdrop-blur-xl">
+        <nav class="px-8 py-3 rounded-full text-lg shadow-lg">
+            <a href="#presentacion" class="mx-4 hover:text-green-400 transition font-semibold">Presentación</a>
+            <a href="#sobre-mi" class="mx-4 hover:text-green-400 transition">Sobre mí</a>
+            <a href="#proyectos" class="mx-4 hover:text-green-400 transition">Proyectos</a>
+            <a href="#habilidades" class="mx-4 hover:text-green-400 transition">Habilidades</a>
+        </nav>
+    </header>
+
+
+    <!-- ================== SECCIÓN 1: PRESENTACIÓN ================== -->
+        <section id="presentacion" class="min-h-screen flex items-center justify-center px-10 py-20">
+
+        <div class="relative flex flex-col md:flex-row items-center max-w-5xl w-full">
+
+            <!-- Texto -->
+            <div class="flex-1 text-left">
+                <h1 class="text-6xl font-bold mb-6">Portfolio</h1>
+
+                <p class="text-xl mb-10">En este portfolio:</p>
+
+                <ul class="text-2xl space-y-6">
+                    <li class="hover:text-green-400 transition cursor-pointer">Sobre mí</li>
+                    <li class="hover:text-green-400 transition cursor-pointer">Proyectos</li>
+                    <li class="hover:text-green-400 transition cursor-pointer">Habilidades</li>
+                </ul>
+            </div>
+
+            <!-- Línea vertical -->
+            <div class="hidden md:block w-px bg-white h-96 mx-12"></div>
+
+            <!-- Foto + Info alineado -->
+            <div class="flex-1 flex flex-col items-center md:items-start">
+
+                <img src="./Fotos/Perfil-lauti.png" class="w-80 rounded-xl shadow-xl">
+
+                <div class="w-full mt-6">
+                    <div class="border-t-2 border-white w-80"></div>
+
+                    <div class="mt-4 ml-1">
+                        <h2 class="text-3xl font-bold">Lautaro Zayat</h2>
+                        <p class="text-lg">09/09/07</p>
+                        <p class="text-lg">18 años</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================== SECCIÓN 2: SOBRE MÍ ================== -->
+    <section id="sobre-mi" class="min-h-screen flex items-center justify-center px-12 py-24">
+
+        <div class="max-w-6xl mx-auto w-full">
+
+            <h2 class="text-5xl font-bold mb-16">Sobre mí:</h2>
+
+            <div class="flex flex-col md:flex-row">
+
+                <!-- TEXTOS IZQUIERDA -->
+                <div class="flex-1 space-y-20 text-lg leading-relaxed pr-10">
+
+                    <!-- BLOQUE 1 -->
+                    <p>
+                        Estudiante del último año del secundario <span class="font-bold text-green-300">ORT especialidad TIC</span>.  
+                        Estoy por empezar la carrera de <span class="font-bold text-green-300">Negocios Digitales</span>  
+                        en la facultad de <span class="font-bold text-green-300">San Andrés</span>.
+                    </p>
+
+                    <!-- BLOQUE 2 -->
+                    <p>
+                        Juego al <span class="font-bold text-green-300">fútbol en el club Hacoaj</span>, donde formo parte de la Sub 21.  
+                        El deporte me ayudó a aprender disciplina, trabajo en equipo y constancia.
+                    </p>
+
+                    <!-- BLOQUE 3 -->
+                    <p>
+                        <span class="font-bold text-green-300">Experiencia laboral</span> de un año como ayudante  
+                        en el área inmobiliaria.
+                    </p>
+                </div>
+
+                <!-- LÍNEA VERTICAL CON PUNTOS -->
+                <div class="hidden md:flex flex-col items-center mx-8">
+                    <div class="w-1 bg-white h-full rounded"></div>
+
+                    <div class="absolute mt-10 w-4 h-4 bg-green-400 rounded-full"></div>
+                    <div class="absolute mt-56 w-4 h-4 bg-green-400 rounded-full"></div>
+                    <div class="absolute mt-[430px] w-4 h-4 bg-green-400 rounded-full"></div>
+                </div>
+
+                <!-- LOGOS DERECHA -->
+                <div class="flex-1 flex flex-col items-center space-y-20 mt-10 md:mt-0">
+
+                    <div class="flex space-x-10">
+                        <img src="./Fotos/ort.png" class="w-32">
+                        <img src="./Fotos/san andres.png" class="w-32">
+                    </div>
+
+                    <img src="./Fotos/hacoaj.png" class="w-36">
+
+                    <img src="./Fotos/trabajo.png" class="w-40">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== SECCIÓN 3: PROYECTOS ================== -->
+    <section id="proyectos" class="min-h-screen flex items-center justify-center px-10 py-20">
+        <h2 class="text-5xl font-bold">Proyectos</h2>
+    </section>
+
+    <!-- ================== SECCIÓN 4: HABILIDADES ================== -->
+    <section id="habilidades" class="min-h-screen flex items-center justify-center px-10 py-20">
+        <h2 class="text-5xl font-bold">Habilidades</h2>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="h-40 bg-gradient-to-t from-blue-800 to-transparent flex items-center justify-center mt-10">
+        <p class="text-lg">© 2025 - Portfolio de Lautaro Zayat</p>
+    </footer>
+
+</body>
+</html>
