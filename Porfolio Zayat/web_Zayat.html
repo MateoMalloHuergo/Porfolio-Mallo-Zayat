@@ -24,8 +24,8 @@
     </header>
 
 
-    <!-- ================== SECCIÓN 1: PRESENTACIÓN ================== -->
-        <section id="presentacion" class="min-h-screen flex items-center justify-center px-10 py-20">
+        <!-- ================== SECCIÓN 1: PRESENTACIÓN ================== -->
+    <section id="presentacion" class="min-h-screen flex items-center justify-center px-10 py-20">
 
         <div class="relative flex flex-col md:flex-row items-center max-w-5xl w-full">
 
@@ -46,24 +46,34 @@
             <div class="hidden md:block w-px bg-white h-96 mx-12"></div>
 
             <!-- Foto + Info alineado -->
-            <div class="flex-1 flex flex-col items-center md:items-start">
+            <div class="flex-1 flex flex-col items-center md:items-start mt-28">
 
-                <img src="./Fotos/Perfil-lauti.png" class="w-80 rounded-xl shadow-xl">
+                <!-- Foto + línea con separación uniforme -->
+                <div class="flex flex-col items-center md:items-start space-y-10">
 
-                <div class="w-full mt-6">
+                    <!-- Foto -->
+                    <img src="./Fotos/Perfil-lauti.png" class="w-80 rounded-xl shadow-xl">
+
+                    <!-- Línea -->
                     <div class="border-t-2 border-white w-80"></div>
 
-                    <div class="mt-4 ml-1">
-                        <h2 class="text-3xl font-bold">Lautaro Zayat</h2>
-                        <p class="text-lg">09/09/07</p>
-                        <p class="text-lg">18 años</p>
-                    </div>
+                </div>
+
+                <!-- Datos -->
+                <div class="mt-10 ml-1">
+                    <h2 class="text-3xl font-bold">Lautaro Zayat</h2>
+                    <p class="text-lg">09/09/07</p>
+                    <p class="text-lg">18 años</p>
                 </div>
 
             </div>
 
         </div>
+
     </section>
+
+
+
 
 
     <!-- ================== SECCIÓN 2: SOBRE MÍ ================== -->
@@ -99,13 +109,19 @@
                 </div>
 
                 <!-- LÍNEA VERTICAL CON PUNTOS -->
-                <div class="hidden md:flex flex-col items-center mx-8">
+                <div class="hidden md:flex flex-col items-center mx-8 relative">
+
+                    <!-- Línea -->
                     <div class="w-1 bg-white h-full rounded"></div>
 
-                    <div class="absolute mt-10 w-4 h-4 bg-green-400 rounded-full"></div>
-                    <div class="absolute mt-56 w-4 h-4 bg-green-400 rounded-full"></div>
-                    <div class="absolute mt-[430px] w-4 h-4 bg-green-400 rounded-full"></div>
+                    <!-- Punto 1 -->
+                    <div class="absolute top-1/4 -ml-1 w-4 h-4 bg-green-400 rounded-full"></div>
+
+                    <!-- Punto 2 -->
+                    <div class="absolute top-2/3 -ml-1 w-4 h-4 bg-green-400 rounded-full"></div>
+
                 </div>
+
 
                 <!-- LOGOS DERECHA -->
                 <div class="flex-1 flex flex-col items-center space-y-20 mt-10 md:mt-0">
@@ -113,30 +129,185 @@
                     <div class="flex space-x-10">
                         <img src="./Fotos/ort.png" class="w-32">
                         <img src="./Fotos/san andres.png" class="w-32">
-                    </div>
+                    </div>  
 
                     <img src="./Fotos/hacoaj.png" class="w-36">
 
-                    <img src="./Fotos/trabajo.png" class="w-40">
+                    <!-- LOGOS DERECHA --<img src="./Fotos/trabajo.png" class="w-40"-->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ================== SECCIÓN 3: PROYECTOS ================== -->
-    <section id="proyectos" class="min-h-screen flex items-center justify-center px-10 py-20">
-        <h2 class="text-5xl font-bold">Proyectos</h2>
+    <section id="proyectos" class="min-h-screen flex items-center justify-center px-12 py-24">
+
+        <div class="max-w-6xl mx-auto w-full">
+
+            <!-- Título -->
+            <h2 class="text-5xl font-bold mb-16">Proyectos:</h2>
+
+            <!-- Introducción -->
+            <p class="text-xl mb-6 max-w-3xl">
+                En ORT tuvimos la oportunidad de crear proyectos para aprender
+                cómo crear apps y videojuegos desde distintos roles.
+            </p>
+
+            <p class="text-xl mb-16 max-w-3xl">
+                Estos fueron los más destacados:
+            </p>
+
+            <div class="flex flex-col md:flex-row">
+
+                <!-- TEXTOS IZQUIERDA + LÍNEA -->
+                <div class="flex-1 flex">
+
+                    <!-- LÍNEA VERTICAL CON PUNTOS -->
+                    <div class="hidden md:flex flex-col items-center mx-8 relative">
+                        <!-- Línea -->
+                        <div class="w-1 bg-white h-full rounded"></div>
+
+                        <!-- Punto 1 -->
+                        <div class="absolute top-[15%] -ml-1 w-4 h-4 bg-green-400 rounded-full"></div>
+
+                        <!-- Punto 2 -->
+                        <div class="absolute top-[55%] -ml-1 w-4 h-4 bg-green-400 rounded-full"></div>
+                    </div>
+
+                    <!-- TEXTOS PROYECTOS -->
+                    <div class="flex-1 space-y-20 text-lg leading-relaxed pr-10">
+
+                        <!-- PROYECTO 1 -->
+                        <div>
+                            <h3 class="text-2xl font-bold underline mb-3">
+                                MercadoLite – Full Stack
+                            </h3>
+                            <p>
+                                Trabajé tanto en el frontend como en el backend con diseño de pantallas,
+                                flujos de usuario, manejo de datos, endpoints, base de datos y validaciones.
+                            </p>
+                        </div>
+
+                        <!-- PROYECTO 2 -->
+                        <div>
+                            <h3 class="text-2xl font-bold underline mb-3">
+                                TicWars – Diseño de interfaces y 3D
+                            </h3>
+                            <p>
+                                Diseñé las interfaces y la estética general del juego. Además, trabajé
+                                en la animación y movimiento 3D de los territorios dentro del mapa.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- LOGOS DERECHA -->
+                <div class="flex-1 flex flex-col items-center justify-start space-y-24 mt-20 md:mt-0">
+
+                    <!-- LOGO 1 -->
+                    <div class="flex flex-col items-center">
+                        <img src="./Fotos/mercadolite.png" class="w-40" alt="MercadoLite">
+                    </div>
+
+                    <!-- LOGO 2 -->
+                    <div class="flex flex-col items-center">
+                        <img src="./Fotos/ticwars.png" class="w-40" alt="TicWars">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
+
+
     <!-- ================== SECCIÓN 4: HABILIDADES ================== -->
-    <section id="habilidades" class="min-h-screen flex items-center justify-center px-10 py-20">
-        <h2 class="text-5xl font-bold">Habilidades</h2>
+    <section id="habilidades" class="min-h-screen flex items-center justify-center px-12 py-24">
+
+        <div class="max-w-6xl mx-auto w-full">
+
+            <!-- Título -->
+            <h2 class="text-5xl font-bold mb-16">Habilidades:</h2>
+
+            <!-- Contenido -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 text-xl">
+
+                <!-- Columna 1 -->
+                <ul class="space-y-6">
+                    <li class="flex items-center space-x-3">
+                        <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                        <span>Desarrollo web: HTML y JavaScript</span>
+                    </li>
+
+                    <li class="flex items-center space-x-3">
+                        <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                        <span>Diseño de interfaces (UI)</span>
+                    </li>
+
+                    <li class="flex items-center space-x-3">
+                        <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                        <span>Diseño 3D</span>
+                    </li>
+                </ul>
+
+                <!-- Columna 2 -->
+                <ul class="space-y-6">
+                    <li class="flex items-center space-x-3">
+                        <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                        <span>Herramientas dominantes: Figma, Blender, GitHub, PostgreSQL</span>
+                    </li>
+
+                    <li class="flex items-center space-x-3">
+                        <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                        <span>Trabajo en equipo</span>
+                    </li>
+
+                    <li class="flex items-center space-x-3">
+                        <span class="w-3 h-3 bg-green-400 rounded-full"></span>
+                        <span>Nivel de inglés: Advanced</span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- ================== CONTACTO ================== -->
+            <div class="mt-32 text-center">
+
+                <h3 class="text-4xl font-bold mb-10">¿Cómo contactarme?</h3>
+
+                <div class="flex justify-center space-x-14">
+
+                    <!-- Instagram -->
+                    <a href="#" class="hover:scale-110 transition">
+                        <img src="./Fotos/instagram.png" class="w-16" alt="Instagram">
+                    </a>
+
+                    <!-- Gmail -->
+                    <a href="#" class="hover:scale-110 transition">
+                        <img src="./Fotos/gmail.png" class="w-16" alt="Gmail">
+                    </a>
+
+                    <!-- (Podés agregar más si querés) -->
+                    <a href="#" class="hover:scale-110 transition">
+                        <img src="./Fotos/linkedin.png" class="w-16" alt="LinkedIn">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
     <!-- FOOTER -->
     <footer class="h-40 bg-gradient-to-t from-blue-800 to-transparent flex items-center justify-center mt-10">
         <p class="text-lg">© 2025 - Portfolio de Lautaro Zayat</p>
     </footer>
+
 
 </body>
 </html>
